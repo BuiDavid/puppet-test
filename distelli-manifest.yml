@@ -8,7 +8,7 @@ david.bui/puppet-test:
     - sudo sudo yum install nodejs -y
   
   PostInstall:
-    - sudo cp -R myKeystoneApp /usr/bin/myKeystoneApp
+    - sudo cp -R ./myKeystoneApp /usr/bin/myKeystoneApp
 
   Start:
     - echo "Starting application"
