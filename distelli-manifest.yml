@@ -1,4 +1,4 @@
-ername->/<-app name->: david.bui / puppet-test
+<-username->/<-app name->: david.bui / puppet-test
 
   PkgInclude:
     - '*'
@@ -8,7 +8,7 @@ ername->/<-app name->: david.bui / puppet-test
     - sudo sudo yum install nodejs -y
 
   PostInstall:
-    - sudo cp -R myKeystoneApp /usr/bin/myKeystoneApp
+    - sudo cp -R myKeystoneApp /usr/bin/myKeystoneAp
 
   Start:
     - echo "Starting application"
