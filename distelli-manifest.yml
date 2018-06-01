@@ -1,0 +1,15 @@
+ername->/<-app name->: david.bui / puppet-test
+
+  PkgInclude:
+    - '*'
+
+  PreInstall:
+    - sudo curl -sL https://rpm.nodesource.com/setup_8.x | sudo bash -
+    - sudo sudo yum install nodejs -y
+
+  PostInstall:
+    - sudo cp -R myKeystoneApp /usr/bin/myKeystoneApp
+
+  Start:
+    - echo "Starting application"
+    - /usr/bin/myKeystoneApp node keystone.js
